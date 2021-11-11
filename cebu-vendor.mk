@@ -12,67 +12,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cebu/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/motorola/cebu/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/motorola/cebu/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
-    vendor/motorola/cebu/proprietary/system_ext/app/DciStatsService/lib/arm64/libmotdci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DciStatsService/lib/arm64/libmotdci_jni.so \
-    vendor/motorola/cebu/proprietary/system_ext/app/FMRadioService/lib/arm64/libqcomfm_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/FMRadioService/lib/arm64/libqcomfm_jni.so \
-    vendor/motorola/cebu/proprietary/system_ext/app/NfcNciNxp/lib/arm64/libnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/NfcNciNxp/lib/arm64/libnfc_nci_jni.so \
-    vendor/motorola/cebu/proprietary/system_ext/app/Nfc_st/lib/arm64/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/Nfc_st/lib/arm64/libnfc_st_dta_jni.so \
-    vendor/motorola/cebu/proprietary/system_ext/app/Nfc_st/lib/arm64/libstnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/Nfc_st/lib/arm64/libstnfc_nci_jni.so \
-    vendor/motorola/cebu/proprietary/system_ext/bin/bt_logger:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/bt_logger \
-    vendor/motorola/cebu/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
-    vendor/motorola/cebu/proprietary/system_ext/bin/diag_dci_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_dci_sample_system \
-    vendor/motorola/cebu/proprietary/system_ext/bin/diag_mdlog_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_mdlog_system \
-    vendor/motorola/cebu/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
-    vendor/motorola/cebu/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
-    vendor/motorola/cebu/proprietary/system_ext/bin/hw/motorola.hardware.tcmd@1.0-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hw/motorola.hardware.tcmd@1.0-service \
-    vendor/motorola/cebu/proprietary/system_ext/bin/motsettings:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/motsettings \
-    vendor/motorola/cebu/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
-    vendor/motorola/cebu/proprietary/system_ext/bin/qccsyshalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshalservice \
-    vendor/motorola/cebu/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
-    vendor/motorola/cebu/proprietary/system_ext/bin/qvrdatalogger:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrdatalogger \
-    vendor/motorola/cebu/proprietary/system_ext/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservice \
-    vendor/motorola/cebu/proprietary/system_ext/bin/qvrservicetest:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservicetest \
-    vendor/motorola/cebu/proprietary/system_ext/bin/qvrservicetest64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservicetest64 \
-    vendor/motorola/cebu/proprietary/system_ext/bin/sg_write_buffer:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sg_write_buffer \
-    vendor/motorola/cebu/proprietary/system_ext/bin/stfactorydemo:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/stfactorydemo \
-    vendor/motorola/cebu/proprietary/system_ext/bin/tcmd_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd_system \
-    vendor/motorola/cebu/proprietary/system_ext/bin/test_diag_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/test_diag_system \
-    vendor/motorola/cebu/proprietary/system_ext/etc/MotoDesktopAppConfig/com.android.wallpaper.desktop-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/MotoDesktopAppConfig/com.android.wallpaper.desktop-config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/MotoDesktopAppConfig/com.motorola.launcher3.desktop-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/MotoDesktopAppConfig/com.motorola.launcher3.desktop-config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/bluetooth/bt_configstore.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/bt_configstore.conf \
-    vendor/motorola/cebu/proprietary/system_ext/etc/bluetooth/bt_profile.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/bt_profile.conf \
-    vendor/motorola/cebu/proprietary/system_ext/etc/bluetooth/interop_database.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/interop_database.conf \
-    vendor/motorola/cebu/proprietary/system_ext/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cdma_call_conf.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/compatconfig/settings-platform-compat-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/compatconfig/settings-platform-compat-config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/default-permissions/default-permissions-com.att.iqi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-com.att.iqi.xml \
+   vendor/motorola/cebu/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/motorola/cebu/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
-    vendor/motorola/cebu/proprietary/system_ext/etc/enable-disable-packages/enable-disable-com.att.iqi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/enable-disable-packages/enable-disable-com.att.iqi.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/enable-disable-packages/enable-disable-com.motorola.iqimotmetrics.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/enable-disable-packages/enable-disable-com.motorola.iqimotmetrics.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/filter-system-apps/filter-IqiMotMetrics.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-IqiMotMetrics.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/filter-system-apps/filter-NfcNciNxp.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-NfcNciNxp.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/filter-system-apps/filter-NfcSetup.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-NfcSetup.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/filter-system-apps/filter-NfcSetup_st.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-NfcSetup_st.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/filter-system-apps/filter-Nfc_st.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-Nfc_st.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/filter-system-apps/filter-VirtualUiccPayment_st.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-VirtualUiccPayment_st.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/filter-system-apps/filter-rcsConfigService.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/filter-system-apps/filter-rcsConfigService.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/group:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/group \
-    vendor/motorola/cebu/proprietary/system_ext/etc/hidden/hidden-com.att.iqi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hidden/hidden-com.att.iqi.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/hidden/hidden-com.motorola.iqimotmetrics.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hidden/hidden-com.motorola.iqimotmetrics.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/motorola/cebu/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/hw/init.stnfc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/init.stnfc.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/init.qti.bt.logger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.qti.bt.logger.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/init.setupwizardext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.setupwizardext.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/motorola.hardware.tcmd@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/motorola.hardware.tcmd@1.0-service.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/perfservice.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/qspmsvc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspmsvc.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/sxrd_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/sxrd_ext.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc \
     vendor/motorola/cebu/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
-    vendor/motorola/cebu/proprietary/system_ext/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nfcee_access.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/nondisable/com.att.iqi.nondisable.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.att.iqi.nondisable.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/nondisable/com.motorola.android.fota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.motorola.android.fota.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/nondisable/com.motorola.ccc.ota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nondisable/com.motorola.ccc.ota.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/nonforcestop/com.att.iqi.nonforcestop.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nonforcestop/com.att.iqi.nonforcestop.xml \
     vendor/motorola/cebu/proprietary/system_ext/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/RemoteSimlock.xml \
     vendor/motorola/cebu/proprietary/system_ext/etc/permissions/RemoteSimlockManager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/RemoteSimlockManager.xml \
     vendor/motorola/cebu/proprietary/system_ext/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/UimGba.xml \
@@ -162,62 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cebu/proprietary/system_ext/etc/permissions/vendor.qti.data.factory-V1.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.data.factory-V1.0-java.xml \
     vendor/motorola/cebu/proprietary/system_ext/etc/permissions/vendor.qti.data.factory-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.data.factory-V2.0-java.xml \
     vendor/motorola/cebu/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsconfig-V1.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsconfig-V1.0-java.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/public.libraries-motocamera.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motocamera.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/public.libraries-motoimagetuner.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-motoimagetuner.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/0/65536/mtp865.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/0/65536/mtp865_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/131072/morpheus.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/131072/morpheus_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/196608/morpheus3.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/196608/morpheus3.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/196608/morpheus3_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/196608/morpheus3_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/196608/morpheus3_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/196608/morpheus3_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/65536/trinity.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/1/65536/trinity_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/2/65536/mtp865.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/2/65536/mtp865.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/2/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/2/65536/mtp865_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/356/2/65536/mtp865_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/2/65536/mtp865_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/131072/mtplahaina.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131072/mtplahaina.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/131072/mtplahaina_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131072/mtplahaina_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/131073/mtplahaina.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131073/mtplahaina.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/131073/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131073/mtplahaina_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/131073/mtplahaina_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131073/mtplahaina_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina_qvr_3dof_tracker_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvrservice_config.txt \
-    vendor/motorola/cebu/proprietary/system_ext/etc/seccomp_policy/perfservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/perfservice.policy \
-    vendor/motorola/cebu/proprietary/system_ext/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/qvr@2.0.policy \
-    vendor/motorola/cebu/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.att.iqi.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.att.iqi.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.devicemanagement.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.devicemanagement.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.mainplm.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.mainplm.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.notification.powersaveQ.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.notification.powersaveQ.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.ccc.ota.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.ccc.ota.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.coresettingsext.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.coresettingsext.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.iqimotmetrics.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.iqimotmetrics.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.msimsettings.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.msimsettings.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.motorola.paks.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.motorola.paks.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/com.summit.motorola.rcs.powersave.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.summit.motorola.rcs.powersave.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-allowlist-com.motorola.paks.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-allowlist-com.motorola.paks.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.android.providers.chromehomepage.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.android.providers.chromehomepage.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.ccc.devicemanagement.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.ccc.devicemanagement.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.ccc.notificationQ.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.ccc.notificationQ.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.demo.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.demo.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.launcher3.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.launcher3.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.livewallpaper.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.livewallpaper.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.motocit.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.motocit.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.msimsettings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.msimsettings.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.motorola.setup.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.setup.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/hiddenapi-whitelist-com.summit.motorola.rcs.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-whitelist-com.summit.motorola.rcs.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/whitelist_com.motorola.motocare.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/whitelist_com.motorola.motocare.xml \
-    vendor/motorola/cebu/proprietary/system_ext/etc/sysconfig/whitelist_com.motorola.rcsConfigService.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/whitelist_com.motorola.rcsConfigService.xml \
     vendor/motorola/cebu/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/motorola/cebu/proprietary/system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/motorola/cebu/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
@@ -698,19 +585,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cebu/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/motorola/cebu/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so \
     vendor/motorola/cebu/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm/libMPLib.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm/libMPLib.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm/libNVT36xxx.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm/libNVT36xxx.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm/libarcsoft_aec_luma_calc_bm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm/libarcsoft_aec_luma_calc_bm.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm/libarcsoft_aec_luma_calculation.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm/libarcsoft_aec_luma_calculation.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm/libtestcore.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm/libtestcore.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm/libtestsdk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm/libtestsdk.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm64/libMPLib.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libMPLib.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm64/libNVT36xxx.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libNVT36xxx.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm64/libarcsoft_aec_luma_calc_bm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libarcsoft_aec_luma_calc_bm.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm64/libarcsoft_aec_luma_calculation.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libarcsoft_aec_luma_calculation.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm64/libtestcore.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libtestcore.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/CQATest/lib/arm64/libtestsdk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/CQATest/lib/arm64/libtestsdk.so \
-    vendor/motorola/cebu/proprietary/system_ext/priv-app/SystemUI/lib/arm64/libBitmapOffsetCalculate_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SystemUI/lib/arm64/libBitmapOffsetCalculate_jni.so \
     vendor/motorola/cebu/proprietary/system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/lib/arm64/libimscamera_jni.so \
     vendor/motorola/cebu/proprietary/system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/lib/arm64/libimsmedia_jni.so \
     vendor/motorola/cebu/proprietary/vendor/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so \
@@ -2817,77 +2691,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/cebu/proprietary/vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 PRODUCT_PACKAGES += \
-    libplatformconfig \
-    CACertService \
     CneApp \
     IWlanService \
     TimeService \
-    3c_main \
-    DciStatsService \
-    DeviceStatisticsService \
-    DynamicDDSService \
-    FMRadioService \
-    LiveWallpapersPicker \
-    MotoBtAptxMode \
-    NFWLocationAttribution \
-    NfcNciNxp \
-    NfcSetup \
-    NfcSetup_st \
-    Nfc_st \
     QtiTelephonyService \
-    VirtualUiccPayment_st \
-    atfwd \
     datastatusnotification \
-    embms \
-    remoteSimLockAuthentication \
-    remotesimlockservice \
     uceShimService \
-    uimgbaservice \
-    uimlpaservice \
-    3c_devicemanagement-binary \
-    3c_notification \
-    3c_ota \
-    AttIqi \
-    CQATest \
-    CarrierConfig \
-    ChromeHomePageProvider \
-    CoreSettingsExt \
-    DemoMode \
-    EmergencyInfo \
-    Fota \
-    GestureNavigationTutorial \
-    GoogleFeedback \
-    GoogleOneTimeInitializer \
-    GoogleServicesFramework \
-    GoogleWallpapers \
-    HiddenMenu \
-    ImagerTuning-V2 \
-    IqiMotMetrics \
-    Launcher3QuickStep \
-    LifetimeData \
-    MSimSettings \
-    ModemStatsService \
-    MotoCare \
-    MotoLiveWallpaper3 \
-    MotoThinkUEM \
-    MotoWifiMetrics \
-    MotorolaSettingsProvider \
-    PAKS \
-    QuickAccessWallet \
-    Settings \
-    SetupWizard \
-    SetupWizardExt \
-    StorageManager \
-    Styles \
-    SummitRcs \
-    SystemUI \
-    WallpaperCropper \
-    com.motorola.android.jvtcmd \
-    com.qualcomm.location \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    rcsConfigService \
     WfdCommon \
     tcmclient \
     ActivityExt \
@@ -2961,17 +2773,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig-V2.1-java \
     vendor.qti.latency-V2.0-java \
     vendor.qti.voiceprint-V1.0-java \
-    android.hardware.atrace@1.0-service \
-    android.hardware.gnss@2.1-service-qti \
-    android.hardware.graphics.mapper-impl-qti-display \
-    android.hardware.health@2.1 \
     android.hardware.neuralnetworks@1.3-service-qti \
-    android.hardware.sensors@2.0-multihal \
-    android.hardware.wifi.hostapd \
-    android.hardware.wifi@1.0-service \
-    manifest_android.hardware.drm@1.3-service.clearkey \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.vibrator.service

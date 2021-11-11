@@ -5,16 +5,163 @@
 soong_namespace {
 }
 
-android_app_import {
-	name: "CACertService",
+cc_prebuilt_library_shared {
+	name: "libfastcvopt",
 	owner: "motorola",
-	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
+	strip: {
+		none: true,
 	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libfastcvopt.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libfastcvopt.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
 	soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+	name: "libqmi_cci",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_common_so",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqmi_common_so.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqmi_common_so.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsdm-disp-vndapis",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsdm-disp-vndapis.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libthermalclient",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "liblbs_core",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/liblbs_core.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsdm-disp-apis.qti",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system_ext/lib/libsdm-disp-apis.qti.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/libsdm-disp-apis.qti.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqsocket",
+	owner: "motorola",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqsocket.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqsocket.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
+}
+
 
 android_app_import {
 	name: "CneApp",
@@ -50,163 +197,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "3c_main",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/3c_main/3c_main.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "DciStatsService",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/DciStatsService/DciStatsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "DeviceStatisticsService",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "DynamicDDSService",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "FMRadioService",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/FMRadioService/FMRadioService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "LiveWallpapersPicker",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/LiveWallpapersPicker/LiveWallpapersPicker.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "MotoBtAptxMode",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/MotoBtAptxMode/MotoBtAptxMode.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "NFWLocationAttribution",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/NFWLocationAttribution/NFWLocationAttribution.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "NfcNciNxp",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/NfcNciNxp/NfcNciNxp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "NfcSetup",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/NfcSetup/NfcSetup.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "NfcSetup_st",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/NfcSetup_st/NfcSetup_st.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "Nfc_st",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/Nfc_st/Nfc_st.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "QtiTelephonyService",
 	owner: "motorola",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "VirtualUiccPayment_st",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/VirtualUiccPayment_st/VirtualUiccPayment_st.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "atfwd",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/atfwd/atfwd.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -226,39 +219,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "embms",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "remoteSimLockAuthentication",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "remotesimlockservice",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/remotesimlockservice/remotesimlockservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "uceShimService",
 	owner: "motorola",
 	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
@@ -266,508 +226,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uimgbaservice",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/uimgbaservice/uimgbaservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "uimlpaservice",
-	owner: "motorola",
-	apk: "proprietary/system_ext/app/uimlpaservice/uimlpaservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "3c_devicemanagement-binary",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/3c_devicemanagement-binary/3c_devicemanagement-binary.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "3c_notification",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/3c_notification/3c_notification.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "3c_ota",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/3c_ota/3c_ota.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "AttIqi",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/AttIqi/AttIqi.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "CQATest",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/CQATest/CQATest.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "CarrierConfig",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/CarrierConfig/CarrierConfig.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "ChromeHomePageProvider",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/ChromeHomePageProvider/ChromeHomePageProvider.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "CoreSettingsExt",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/CoreSettingsExt/CoreSettingsExt.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "DemoMode",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/DemoMode/DemoMode.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "EmergencyInfo",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/EmergencyInfo/EmergencyInfo.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "Fota",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/Fota/Fota.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "GestureNavigationTutorial",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/GestureNavigationTutorial/GestureNavigationTutorial.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "GoogleFeedback",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "GoogleOneTimeInitializer",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "GoogleServicesFramework",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "GoogleWallpapers",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/GoogleWallpapers/GoogleWallpapers.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "HiddenMenu",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/HiddenMenu/HiddenMenu.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "ImagerTuning-V2",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/ImagerTuning-V2/ImagerTuning-V2.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "IqiMotMetrics",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/IqiMotMetrics/IqiMotMetrics.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "Launcher3QuickStep",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/Launcher3QuickStep/Launcher3QuickStep.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "LifetimeData",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/LifetimeData/LifetimeData.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "MSimSettings",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/MSimSettings/MSimSettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "ModemStatsService",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/ModemStatsService/ModemStatsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "MotoCare",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/MotoCare/MotoCare.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "MotoLiveWallpaper3",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/MotoLiveWallpaper3/MotoLiveWallpaper3.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "MotoThinkUEM",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/MotoThinkUEM/MotoThinkUEM.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "MotoWifiMetrics",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/MotoWifiMetrics/MotoWifiMetrics.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "MotorolaSettingsProvider",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "PAKS",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/PAKS/PAKS.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "QuickAccessWallet",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/QuickAccessWallet/QuickAccessWallet.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "Settings",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/Settings/Settings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "SetupWizard",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/SetupWizard/SetupWizard.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "SetupWizardExt",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/SetupWizardExt/SetupWizardExt.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "StorageManager",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/StorageManager/StorageManager.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "Styles",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/Styles/Styles.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "SummitRcs",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/SummitRcs/SummitRcs.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "SystemUI",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/SystemUI/SystemUI.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "WallpaperCropper",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "com.motorola.android.jvtcmd",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/com.motorola.android.jvtcmd/com.motorola.android.jvtcmd.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.location",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 	system_ext_specific: true,
 }
 
@@ -799,18 +257,6 @@ android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "motorola",
 	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "rcsConfigService",
-	owner: "motorola",
-	apk: "proprietary/system_ext/priv-app/rcsConfigService/rcsConfigService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -1329,81 +775,9 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.atrace@1.0-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.gnss@2.1-service-qti",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.graphics.mapper-impl-qti-display",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.health@2.1",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-qti",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.sensors@2.0-multihal",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.wifi.hostapd",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.wifi@1.0-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.clearkey",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -1426,31 +800,3 @@ prebuilt_etc_xml {
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.display.allocator-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.display.composer-service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.vibrator.service",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
