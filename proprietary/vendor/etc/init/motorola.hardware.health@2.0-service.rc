@@ -1,4 +1,0 @@
-service vendor.mot.health-hal-2-0 /vendor/bin/hw/motorola.hardware.health@2.0-service
-    class hal
-    user system
-    group system
